@@ -1,0 +1,20 @@
+.direction {
+    padding: 100px 0;
+}
+.direction__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 31px;
+}
+.direction__item {
+    border: 1px solid #D9D9DE;
+    border-top: none;
+}
+.direction__img {
+    display: block;
+}
+.direction__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 19px 19px;
+}
