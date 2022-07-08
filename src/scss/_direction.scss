@@ -1,20 +1,43 @@
 .direction {
-    padding: 100px 0;
+    background-image: url(../images/panorama.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: #886239;
+}
+.direction__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 35px;
+    margin-bottom: 52px;
 }
 .direction__inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 31px;
-}
-.direction__item {
-    border: 1px solid #D9D9DE;
-    border-top: none;
+    column-gap: 55px;
+    row-gap: 67px;
+    padding-bottom: 49px;
 }
 .direction__img {
-    display: block;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
-.direction__subtitle {
+.direction__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.direction__info {
+    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    padding: 12px 19px 19px;
+    line-height: 130%;
+    color: #FFFFFF;
 }
