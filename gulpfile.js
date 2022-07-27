@@ -8,7 +8,7 @@ const webpcss = require('gulp-webpcss');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
-const webp = require('gulp-webp');
+// const webp = require('gulp-webp');
 const htmlmin = require('gulp-htmlmin');
 const webphtml = require('gulp-webp-html');
 const del = require('del');
@@ -59,9 +59,9 @@ function scripts() {
 
 function images() {
     return src('src/images/**/*')
-        .pipe(webp({
-            quality: 80
-        }))
+        // .pipe(webp({
+        //     quality: 80
+        // }))
         .pipe((imagemin({
             progressive: true,
             svgoPlugins: [{remiveViewBox: false}],
